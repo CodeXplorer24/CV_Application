@@ -1,8 +1,6 @@
 import { useState } from "react";
-export default function GeneralInfo(){
+export default function GeneralInfo({data, setData}){
     const[isEditing, setIsEditing] = useState(false);
-
-    const [data, setData] = useState({name : "", email : "", phone : ""});
 
     const handleChange = (e) => {
         setData({...data, [e.target.name] : e.target.value})

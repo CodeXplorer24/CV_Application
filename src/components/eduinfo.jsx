@@ -1,8 +1,6 @@
 import {useState } from "react";
 
-export default function EduInfo (){
-    const [data, setData] = useState({school : "", degree : "", year : ""});
-
+export default function EduInfo ({data, setData}){
     const [isEditing, setIsEditing] = useState(false);
 
     function handleChange (e) {
