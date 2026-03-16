@@ -9,7 +9,7 @@ export default function ExpInfo ({data, setData}){
 
     return (
         <div>
-            <h2>Education</h2>
+            <h2>Exprience</h2>
             { isEditing ? (
                 <>
                     <input
